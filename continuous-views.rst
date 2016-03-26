@@ -124,13 +124,16 @@ This command will efficiently remove all of the continuous view's rows, and is t
 Viewing Continuous Views
 ---------------------------
 
-To view the continuous views currently in the system, you can run the following query:
+To view the continuous views currently in the system, you can run the
+following query:
 
 .. code-block:: pipeline
 
 	SELECT * FROM pipeline_views();
 
 Don't worry about all of the columns returned--most of them are only for internal use. The important columns are :code:`name`, which contains the name you gave the continuous view when you created it; and :code:`query`, which contains the continuous view's query definition.
+
+.. note:: available from version 0.9.0
 
 Inferred Schemas
 --------------------
